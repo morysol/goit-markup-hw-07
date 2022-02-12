@@ -28,7 +28,7 @@
 
   transition: color 250ms $function-time;
 
-  &:hover,
+  .main-navigation__item:hover &,
   &:focus {
     color: $color-accent;
   }
