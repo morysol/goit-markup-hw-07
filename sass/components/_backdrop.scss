@@ -128,9 +128,9 @@
   transition: fill 250ms $function-time;
 }
 
-// .client-info__input-txt:focus ~ .client-info__icon-input {
-//   fill: $color-accent;
-// }
+.client-info__input-txt:focus ~ .client-info__icon-input {
+  fill: $color-accent;
+}
 
 .client-info__input-txt {
   width: 100%;
