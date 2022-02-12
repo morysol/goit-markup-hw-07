@@ -292,6 +292,12 @@ li {
   padding: 0;
 }
 
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .color-accent {
   color: #2196f3;
 }
@@ -367,6 +373,60 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.purchase-button {
+  display: inline-block;
+  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875%;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-width: 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.purchase-button:hover, .purchase-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  border-radius: 4px;
+}
+
+.submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875%;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.submit-icon {
+  margin-left: 12px;
 }
 
 .logo {
