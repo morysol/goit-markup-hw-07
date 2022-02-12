@@ -14,18 +14,13 @@
   color: $color-white;
   background-color: $color-accent;
 
-  border-width: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  cursor: pointer;
 
   &:hover,
   &:focus {
     color: $color-white;
     background-color: $color-accent;
-
-    border-radius: 4px;
   }
 }
 

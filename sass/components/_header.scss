@@ -1,11 +1,10 @@
 .page-header {
   height: 80px;
   border-bottom: 1px solid #ececec;
+}
+.page-header__container {
+  display: flex;
+  align-items: stretch;
 
-  &__container {
-    display: flex;
-    align-items: stretch;
-
-    height: 100%;
-  }
+  height: 100%;
 }

@@ -1,5 +1,24 @@
 /* navigation */
-.link--navigation {
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+.main-navigation__list {
+  display: flex;
+  height: 100%;
+}
+
+.main-navigation__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.main-navigation__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -12,24 +31,5 @@
   &:hover,
   &:focus {
     color: $color-accent;
-  }
-}
-
-.main-navigation {
-  display: flex;
-  align-items: center;
-
-  &__list {
-    display: flex;
-    height: 100%;
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 50px;
   }
 }
