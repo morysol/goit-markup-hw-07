@@ -18,10 +18,6 @@
   }
 }
 
-.backdrop.is-hidden .modal-container {
-  transform: translate(-50%, -50%) scale(0.5, 0.5) rotate(45deg);
-}
-
 .modal-container {
   position: absolute;
 
@@ -40,7 +36,12 @@
 
   background-color: $color-white;
   transition: transform 250ms $function-time;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5, 0.5) rotate(45deg);
+  }
 }
+
 // see _buttons.scss
 .modal-container__close-button {
   display: flex;
@@ -68,10 +69,10 @@
 .modal-container__close-icon {
   fill: currentColor;
   transition: fill 250ms $function-time;
-}
 
-.modal-container__close-button:hover &__close-icon {
-  fill: $color-accent;
+  .modal-container__close-button:hover & {
+    fill: $color-accent;
+  }
 }
 
 .input-field {
@@ -128,9 +129,9 @@
   transition: fill 250ms $function-time;
 }
 
-.client-info__input-txt:focus ~ .client-info__icon-input {
-  fill: $color-accent;
-}
+// .client-info__input-txt:focus ~ .client-info__icon-input {
+//   fill: $color-accent;
+// }
 
 .client-info__input-txt {
   width: 100%;
@@ -203,15 +204,23 @@
   background-color: $color-accent;
 }
 
-.client-agree:focus + .client-info__icon-check {
-  stroke: $color-black;
-  stroke-linejoin: round;
-  stroke-width: 5px;
-}
+// .client-agree:focus + .client-info__icon-check {
+//   stroke: $color-black;
+//   stroke-linejoin: round;
+//   stroke-width: 5px;
+// }
 
-.client-agree:checked + .client-info__icon-check {
-  stroke: none;
-  fill: $color-accent;
+.client-info__icon-check {
+  .client-agree:focus + & {
+    stroke: $color-black;
+    stroke-linejoin: round;
+    stroke-width: 5px;
+  }
+
+  .client-agree:checked + & {
+    stroke: none;
+    fill: $color-accent;
+  }
 }
 
 .client-info__deal {

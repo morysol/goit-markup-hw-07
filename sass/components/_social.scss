@@ -31,11 +31,15 @@
   width: 20px;
   height: 20px;
   fill: currentColor;
+
+  .social-list__icon & {
+    fill: $color-white;
+  }
 }
 
 // theme dark
 
-.social-list--theme-dark {
+.social-list__link--theme-dark {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms $function-time;
 
@@ -44,8 +48,4 @@
     color: $color-white;
     background-color: $color-accent;
   }
-}
-
-.social-list--theme-dark &__icon {
-  fill: $color-white;
 }

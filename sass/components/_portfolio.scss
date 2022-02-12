@@ -91,12 +91,12 @@
 
     transform: translateY(100%);
     transition: transform 250ms $function-time;
-  }
-}
 
-.portfolio__link:hover .portfolio__thumb::before,
-.portfolio__link:focus .portfolio__thumb::before {
-  transform: translateY(0);
+    .portfolio__link:hover &,
+    .portfolio__link:focus & {
+      transform: translateY(0);
+    }
+  }
 }
 
 .portfolio__overlay-text {
@@ -115,9 +115,9 @@
   transform: translateY(140%);
 
   transition: transform 250ms $function-time;
-}
 
-.portfolio__card:hover .portfolio__overlay-text,
-.portfolio__link:focus .portfolio__overlay-text {
-  transform: translateY(0);
+  .portfolio__card:hover &,
+  .portfolio__link:focus & {
+    transform: translateY(0);
+  }
 }
