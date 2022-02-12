@@ -20,12 +20,30 @@
   color: $color-social-links;
   transition: color 250ms $function-time, background-color 250ms $function-time;
 
+  &--theme-dark {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms $function-time;
+  }
+
   &:hover,
   &:focus {
     color: $color-white;
     background-color: $color-accent;
   }
 }
+
+// theme dark
+
+// .social-list__link--theme-dark {
+//   background-color: rgba(255, 255, 255, 0.1);
+//   transition: background-color 250ms $function-time;
+
+//   &:hover,
+//   &:focus {
+//     color: $color-white;
+//     background-color: $color-accent;
+//   }
+// }
 
 .social-list__icon {
   width: 20px;
@@ -34,18 +52,5 @@
 
   .social-list__icon & {
     fill: $color-white;
-  }
-}
-
-// theme dark
-
-.social-list__link--theme-dark {
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms $function-time;
-
-  &:hover,
-  &:focus {
-    color: $color-white;
-    background-color: $color-accent;
   }
 }
