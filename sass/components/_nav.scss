@@ -1,0 +1,35 @@
+/* navigation */
+.link--navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  color: $color-dark;
+
+  transition: color 250ms $function-time;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    height: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}

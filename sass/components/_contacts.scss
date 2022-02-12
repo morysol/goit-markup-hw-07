@@ -1,0 +1,64 @@
+.envelope {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+/*  tel, email  */
+.contacts-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+
+    color: $color-text-primary;
+
+    transition: color 250ms $function-time;
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }
+  }
+}
+
+.address {
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    font-style: normal;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $color-white;
+  }
+
+  &__contacts-link {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: $color-contacts-footer;
+    transition: color 250ms $function-time;
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }
+  }
+}
