@@ -1,30 +1,27 @@
 /* -------------   team section */
-.section-team {
-  background-color: $color-button-light;
-}
 
-.team-list {
+.team {
   display: flex;
 }
 
-.team-list__item {
+.team__item {
   background-color: $color-white;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.team-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-list__card {
+.team__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-list__title {
+.team__title {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -37,7 +34,7 @@
   color: $color-dark;
 }
 
-.team-list__text {
+.team__text {
   margin-bottom: 16px;
 
   font-size: 16px;

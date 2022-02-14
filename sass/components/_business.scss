@@ -1,20 +1,16 @@
-.section-business {
-  padding-bottom: 94px;
-}
-
-.business-list {
+.business {
   display: flex;
 }
 
-.business-list__item {
+.business__item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.business-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.business-list__lable {
+.business__lable {
   position: absolute;
   display: flex;
   align-items: center;
@@ -29,7 +25,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.business-list__title {
+.business__title {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;

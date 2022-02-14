@@ -14,31 +14,33 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <link rel="stylesheet" href="./css//main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="container page-header__container">
         <nav class="main-navigation">
-          <a class="link logo" href="./index.html"><span class="color-accent">Web</span>Studio</a>
+          <a class="logo" href="./index.html"><span class="logo__color-accent">Web</span>Studio</a>
 
-          <ul class="main-navigation__list list">
-            <li class="main-navigation__item current-page">
-              <a href="./index.html" class="link main-navigation__link">Студия</a>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a href="./index.html" class="main-navigation__link">Студия</a>
             </li>
             <li class="main-navigation__item">
-              <a href="./portfolio.html" class="link main-navigation__link">Портфолио</a>
+              <a href="./portfolio.html" class="main-navigation__link current-page"
+                >Портфолио</span></a
+              >
             </li>
             <li class="main-navigation__item">
-              <a href="#" class="link main-navigation__link">Контакты</a>
+              <a href="#" class="main-navigation__link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="contacts-list list">
+        <ul class="contacts-list">
           <li class="contacts-list__item">
-            <a class="contacts-list__link link" href="mailto:info@devstudio.com">
-              <svg class="envelope" width="16" height="12">
+            <a class="contacts-list__link" href="mailto:info@devstudio.com">
+              <svg class="envelope-icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com
@@ -46,8 +48,8 @@
           </li>
 
           <li class="contacts-list__item">
-            <a class="contacts-list__link link" href="tel:info@+380961111111">
-              <svg class="envelope" width="10" height="16">
+            <a class="contacts-list__link" href="tel:info@+380961111111">
+              <svg class="envelope-icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               tel +38 096 111 11 11
@@ -62,27 +64,27 @@
         <div class="container">
           <h1 class="section__header visually-hidden">portfolio</h1>
 
-          <ul class="list navigation-bar">
+          <ul class="navigation-bar">
             <li class="navigation-bar__item">
-              <button type="button" class="btn navigation-bar__button">Все</button>
+              <button type="button" class="navigation-bar__button">Все</button>
             </li>
             <li class="navigation-bar__item">
-              <button type="button" class="btn navigation-bar__button">Веб-сайты</button>
+              <button type="button" class="navigation-bar__button">Веб-сайты</button>
             </li>
             <li class="navigation-bar__item">
-              <button type="button" class="btn navigation-bar__button">Приложения</button>
+              <button type="button" class="navigation-bar__button">Приложения</button>
             </li>
             <li class="navigation-bar__item">
-              <button type="button" class="btn navigation-bar__button">Дизайн</button>
+              <button type="button" class="navigation-bar__button">Дизайн</button>
             </li>
             <li class="navigation-bar__item">
-              <button type="button" class="btn navigation-bar__button">Маркетинг</button>
+              <button type="button" class="navigation-bar__button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="list portfolio">
+          <ul class="portfolio">
             <li class="portfolio__card">
-              <a href="#" class="link portfolio__link">
+              <a href="#" class="portfolio__link">
                 <div class="portfolio__thumb">
                   <p class="portfolio__overlay-text">
                     Технокряк это современная площадка распространения коронавируса. Компании
@@ -92,9 +94,9 @@
                   <img src="./images/portfolio1.jpg" alt="image our portfolio 1" width="370" />
                 </div>
 
-                <div class="portfolio__footer">
+                <div class="portfolio__card-bottom">
                   <h2 class="portfolio__title">Технокряк</h2>
-                  <p class="portfolio__txt">Веб-сайт</p>
+                  <p class="portfolio__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -108,9 +110,9 @@
                   </p>
                   <img src="./images/portfolio2.jpg" alt="image our portfolio 2" width="370" />
                 </div>
-                <div class="portfolio__footer">
+                <div class="portfolio__card-bottom">
                   <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
-                  <p class="portfolio__txt">Дизайн</p>
+                  <p class="portfolio__text">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -124,9 +126,9 @@
                   </p>
                   <img src="./images/portfolio3.jpg" alt="image our portfolio 3" width="370" />
                 </div>
-                <div class="portfolio__footer">
+                <div class="portfolio__card-bottom">
                   <h2 class="portfolio__title">Ресторан Seafood</h2>
-                  <p class="portfolio__txt">Приложение</p>
+                  <p class="portfolio__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -140,9 +142,9 @@
                   </p>
                   <img src="./images/portfolio4.jpg" alt="image our portfolio 4" width="370" />
                 </div>
-                <div class="portfolio__footer">
+                <div class="portfolio__card-bottom">
                   <h2 class="portfolio__title">Проект Prime</h2>
-                  <p class="portfolio__txt">Маркетинг</p>
+                  <p class="portfolio__text">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -156,9 +158,9 @@
                   </p>
                   <img src="./images/portfolio5.jpg" alt="image our portfolio 5" width="370" />
                 </div>
-                <div class="portfolio__footer">
+                <div class="portfolio__card-bottom">
                   <h2 class="portfolio__title">Проект Boxes</h2>
-                  <p class="portfolio__txt">Приложение</p>
+                  <p class="portfolio__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -172,9 +174,9 @@
                   </p>
                   <img src="./images/portfolio6.jpg" alt="image our portfolio 6" width="370" />
                 </div>
-                <div class="portfolio__footer">
+                <div class="portfolio__card-bottom">
                   <h2 class="portfolio__title">Inspiration has no Borders</h2>
-                  <p class="portfolio__txt">Веб-сайт</p>
+                  <p class="portfolio__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -188,9 +190,9 @@
                   </p>
                   <img src="./images/portfolio7.jpg" alt="image our portfolio 7" width="370" />
                 </div>
-                <div class="portfolio__footer">
+                <div class="portfolio__card-bottom">
                   <h2 class="portfolio__title">Издание Limited Editions</h2>
-                  <p class="portfolio__txt">Дизайн</p>
+                  <p class="portfolio__text">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -204,9 +206,9 @@
                   </p>
                   <img src="./images/portfolio8.jpg" alt="image our portfolio 8" width="370" />
                 </div>
-                <div class="portfolio__footer">
+                <div class="portfolio__card-bottom">
                   <h2 class="portfolio__title">Проект LAB Limited Editions</h2>
-                  <p class="portfolio__txt">Маркетинг</p>
+                  <p class="portfolio__text">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -220,9 +222,9 @@
                   </p>
                   <img src="./images/portfolio9.jpg" alt="image our portfolio 9" width="370" />
                 </div>
-                <div class="portfolio__footer">
+                <div class="portfolio__card-bottom">
                   <h2 class="portfolio__title">Growing Business</h2>
-                  <p class="portfolio__txt">Приложение</p>
+                  <p class="portfolio__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -234,26 +236,26 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="panel-contacts">
-          <a class="link logo logo--theme-dark" href="./index.html"
-            ><span class="color-accent">Web</span>Studio
+          <a class="logo logo--theme-dark" href="./index.html"
+            ><span class="logo__color-accent">Web</span>Studio
           </a>
 
           <address>
-            <ul class="address__list list">
+            <ul class="address__list">
               <li class="address__item">
                 <a
-                  class="link address__link"
+                  class="address__link"
                   href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&ehbc=2E312F"
                   >г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
               <li class="address__item">
-                <a class="link address__contacts-link" href="mailto:info@devstudio.com"
+                <a class="address__contacts-link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="address__item">
-                <a class="link address__contacts-link" href="tel:info@+380961111111"
+                <a class="address__contacts-link" href="tel:info@+380961111111"
                   >tel +38 096 111 11 11</a
                 >
               </li>
@@ -262,7 +264,7 @@
         </div>
         <div class="panel-social">
           <h2 class="panel-social__title">присоединяйтесь</h2>
-          <ul class="list social-list">
+          <ul class="social-list">
             <li class="social-list__item">
               <a
                 href="https://www.instagram.com/"
@@ -319,7 +321,7 @@
               class="subscribe-email__input"
             />
 
-            <button type="submit" class="btn submit-button">
+            <button type="submit" class="submit-button">
               Подписаться
               <svg class="submit-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>

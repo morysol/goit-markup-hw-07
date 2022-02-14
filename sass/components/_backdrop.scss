@@ -198,17 +198,11 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   position: absolute;
-}
 
-.client-agree:checked {
-  background-color: $color-accent;
+  &:checked {
+    background-color: $color-accent;
+  }
 }
-
-// .client-agree:focus + .client-info__icon-check {
-//   stroke: $color-black;
-//   stroke-linejoin: round;
-//   stroke-width: 5px;
-// }
 
 .client-info__icon-check {
   .client-agree:focus + & {
